@@ -1,14 +1,34 @@
-<!DOCTYPE html>
+ <!DoCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Study Buddy</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Login Form & Register </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box active" id="login-form">
+            <form method="POST" action="/process_login">
+                <h2>Login</h2>
+                   <input type="email" name="email" placeholder="Email" required>
+                   <input type="password" name="password" placeholder="Password" required>
+                   <button type ="submit" name="login">Login </button>
+                   <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p>
+                </form>
+         </div>
     
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+          <div class="form-box" id="register-form">
+            <form method="POST" action="/process_register" >
+                <h2>Register</h2>
+                   <input type="text" name="name" placeholder="Name" required>
+                   <input type="email" name="email" placeholder="Email" required>
+                   <input type="password" name="password" placeholder="Password" required>
+                   <button type ="submit" name="register">Register </button>
+                   <p>Already have an account? <a href="#" onclick="showForm('login-form')">Login</a></p>
+                </form>
+         </div>
+        </div>
+        <script src="script.js"></script>
 </body>
 </html>
