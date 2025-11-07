@@ -12,6 +12,7 @@ def get_db_connection():
 
 @app.route('/index', methods=['GET'])
 def show_index_page():
+    
     return render_template('index.html')
 
 @app.route('/process_register', methods=['POST'])
