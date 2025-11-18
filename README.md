@@ -6,4 +6,4 @@ Welcome to AI Study Buddy – your intelligent, always-on learning companion des
 ___________________________________________________________________
 This project idea was made for HackXpo 2025 event held by the Finite Loop Club.
 
-## This was built exclusively for HackXpo '25
+## This was built exclusively for Hackxpo'25
